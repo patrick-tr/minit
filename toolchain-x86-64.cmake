@@ -1,8 +1,8 @@
 set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_SYSTEM_PROCESSOR x86_64)
 
-set(CMAKE_C_COMPILER x86-64-linux-gnu-gcc)
-set(CMAKE_CXX_COMPILER x86-64-linux-gnu-g++)
+set(CMAKE_C_COMPILER x86_64-linux-gnu-gcc)
+set(CMAKE_CXX_COMPILER x86_64-linux-gnu-g++)
 
 # Detect and set sysroot automatically
 execute_process(
