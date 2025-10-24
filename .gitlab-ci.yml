@@ -1,0 +1,19 @@
+stages:
+  - compile
+  - package
+  - publish
+
+
+compile_amd64:
+  stage: compile
+  image: debian:stable-slim
+  script:
+    ls -al
+
+compile_arm64:
+  stage: compile
+  image: debian:stable-slim
+  script: 
+    ls -al
+
+
