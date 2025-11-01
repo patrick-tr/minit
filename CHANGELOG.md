@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/patrick-tr/minit/compare/v1.1.3...v1.1.4) (2025-11-01)
+
+
+### Bug Fixes
+
+* download artifacts to bin dir ([c8b8e3f](https://github.com/patrick-tr/minit/commit/c8b8e3f2100313c51bbef96eab81f222b39aef49))
+
 ## [1.1.3](https://github.com/patrick-tr/minit/compare/v1.1.2...v1.1.3) (2025-11-01)
 
 
