@@ -26,11 +26,13 @@ jobs:
         run: |
           cmake -S . -B build-${{ matrix.arch }} -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=toolchain-${{ matrix.arch }}.cmake
           cmake --build build-${{ matrix.arch }}
+          sha256sum bin/minit > bin/minit.sha256sum
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: minit-${{ matrix.arch }}
           path: bin/*
+          retention-days: 1
 
   semantic-release:
     needs: build_binaries
@@ -57,11 +59,6 @@ jobs:
         uses: actions/download-artifact@v5
         with: 
           path: bin
-      - name: Create Checksums
-        run: |
-          for file in bin/*; do
-            sha256sum "${file}" "${file}.sha256sum"
-          done
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         id: semantic
