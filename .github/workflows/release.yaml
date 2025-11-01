@@ -26,7 +26,11 @@ jobs:
         run: |
           cmake -S . -B build-${{ matrix.arch }} -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=toolchain-${{ matrix.arch }}.cmake
           cmake --build build-${{ matrix.arch }}
-          sha256sum bin/minit > bin/minit.sha256sum
+      - name: Generate checksum
+        run: |
+          for file in bin/*; do 
+            sha256sum "${file}" > "${file}.sha256sum"
+          done 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
