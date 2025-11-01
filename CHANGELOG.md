@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/patrick-tr/minit/compare/v1.0.0...v1.1.0) (2025-11-01)
+
+
+### Features
+
+* add assets to release ([6272af2](https://github.com/patrick-tr/minit/commit/6272af2464ddfa23b4d20f0fc308547e37b83c37))
+
 # 1.0.0 (2025-11-01)
 
 
