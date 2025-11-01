@@ -20,7 +20,9 @@ jobs:
       - name: setup toolchain
         run: |
           sudo apt-get update
-          sudo apt-get install -y gcc-${{ matrix.arch }}-linux-gnu g++-${{ matrix.arch }}-linux-gnu build-essential cmake
+
+          installArch=$(echo "${{matrix.arch}}" | sed "s|x86_64|x86-64|")
+          sudo apt-get install -y "gcc-${ $installArch }}-linux-gnu" "g++-${ installArch }-linux-gnu" build-essential cmake
       - name: run cmake
         run: |
           cmake -S . -B build-${{ matrix.arch }} -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=toolchain-${{ matrix.arch }}.cmake
