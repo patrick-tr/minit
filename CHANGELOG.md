@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/patrick-tr/minit/compare/v1.1.4...v1.1.5) (2025-11-01)
+
+
+### Bug Fixes
+
+* add debug steps for assets ([ae59635](https://github.com/patrick-tr/minit/commit/ae59635bd70bc14ce2a2eaed18abde8a905d987a))
+
 ## [1.1.4](https://github.com/patrick-tr/minit/compare/v1.1.3...v1.1.4) (2025-11-01)
 
 
