@@ -57,8 +57,11 @@ jobs:
         uses: actions/download-artifact@v5
         with: 
           path: bin
-      - run: ls -al .
-      - run: ls -al bin
+      - name: Create Checksums
+        run: |
+          for file in bin/*; do
+            echo $file
+          done
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         id: semantic
