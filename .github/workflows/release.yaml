@@ -13,16 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        arch: [ x86_64, aarch64, riscv64 ]
+        arch: [ x86-64, aarch64, riscv64 ]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
       - name: setup toolchain
         run: |
           sudo apt-get update
-
-          installArch=$(echo "${{matrix.arch}}" | sed "s|x86_64|x86-64|")
-          sudo apt-get install -y "gcc-${ $installArch }}-linux-gnu" "g++-${ installArch }-linux-gnu" build-essential cmake
+          sudo apt-get install -y gcc-${{ matrix.arch }}-linux-gnu g++-${{ matrix.arch }}-linux-gnu build-essential cmake
       - name: run cmake
         run: |
           cmake -S . -B build-${{ matrix.arch }} -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=toolchain-${{ matrix.arch }}.cmake
@@ -30,8 +28,8 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: minit-${{ github.ref_name }}
-          path: bin
+          name: minit-${{ matrix.arch }}-${{ github.ref_name }}
+          path: bin/*
 
   semantic-release:
     needs: build_binaries
@@ -56,8 +54,6 @@ jobs:
         run: mv .releaserc.prerelease.yaml .releaserc.yaml
       - name: Download build artifacts
         uses: actions/download-artifact@v5
-        with:
-          name: minit-${{ github.ref_name }}
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         id: semantic
