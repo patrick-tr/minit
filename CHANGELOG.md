@@ -1,3 +1,28 @@
+# 1.0.0 (2025-11-01)
+
+
+### Bug Fixes
+
+* add debug steps for assets ([ae59635](https://github.com/patrick-tr/minit/commit/ae59635bd70bc14ce2a2eaed18abde8a905d987a))
+* add minit-* as wildcard for assets ([69eebb6](https://github.com/patrick-tr/minit/commit/69eebb6579dbb7d5dbdbeb733d4c29b3af870940))
+* download artifacts to bin dir ([c8b8e3f](https://github.com/patrick-tr/minit/commit/c8b8e3f2100313c51bbef96eab81f222b39aef49))
+* other approach ([46e3c91](https://github.com/patrick-tr/minit/commit/46e3c9198005f57599029cf00255c1fbb47b5596))
+* renamed build job ([cf54978](https://github.com/patrick-tr/minit/commit/cf54978be270d18dc9092d23561d3138477571a2))
+* resolve arch naming ([0607d93](https://github.com/patrick-tr/minit/commit/0607d9385d0a3f70af00cc1b635544326868da2a))
+* try generating sums ([280e3b4](https://github.com/patrick-tr/minit/commit/280e3b4fc409e90ed83e4b304e7f7b75a4c8129c))
+* **ci:** fix condition in semantic-release if ([4e16f7e](https://github.com/patrick-tr/minit/commit/4e16f7ee346873744611fe0db7010a9ba2f98f33))
+
+
+### Features
+
+* add assets to release ([6272af2](https://github.com/patrick-tr/minit/commit/6272af2464ddfa23b4d20f0fc308547e37b83c37))
+* add more architectures and githubb pipeline ([8e485b9](https://github.com/patrick-tr/minit/commit/8e485b9a83fa4f48bac4f75119a2fb0c46caa00a))
+* add possibility to build deb package ([10eaea6](https://github.com/patrick-tr/minit/commit/10eaea6065d4a1cd0414d6d79dc26fde6fcab532))
+* add real build to gitlab ci ([821df3a](https://github.com/patrick-tr/minit/commit/821df3a95c66cac04958700c6127feae2f014c1c))
+* add semantic release ([d3a729c](https://github.com/patrick-tr/minit/commit/d3a729cc53284147d393f867ff0b8121f5352927))
+* add sha256sum for binary assets ([130a355](https://github.com/patrick-tr/minit/commit/130a35526f21363d6deeddd47d4339730da4bef2))
+* create  project and setup build tools ([ca8e256](https://github.com/patrick-tr/minit/commit/ca8e256d02cc222da1e74b2e6be1d9842b581579))
+
 ## [1.1.5](https://github.com/patrick-tr/minit/compare/v1.1.4...v1.1.5) (2025-11-01)
 
 
