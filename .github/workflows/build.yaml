@@ -27,3 +27,4 @@ jobs:
         with:
           name: minit-${{ matrix.arch }}-${{ github.ref_name }}
           path: bin/${{ matrix.arch }}/minit
+          retention-days: 5
