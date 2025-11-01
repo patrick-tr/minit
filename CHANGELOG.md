@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/patrick-tr/minit/compare/v1.1.1...v1.1.2) (2025-11-01)
+
+
+### Bug Fixes
+
+* renamed build job ([cf54978](https://github.com/patrick-tr/minit/commit/cf54978be270d18dc9092d23561d3138477571a2))
+
 ## [1.1.1](https://github.com/patrick-tr/minit/compare/v1.1.0...v1.1.1) (2025-11-01)
 
 
