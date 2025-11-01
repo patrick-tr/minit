@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/patrick-tr/minit/compare/v1.1.2...v1.1.3) (2025-11-01)
+
+
+### Bug Fixes
+
+* add minit-* as wildcard for assets ([69eebb6](https://github.com/patrick-tr/minit/commit/69eebb6579dbb7d5dbdbeb733d4c29b3af870940))
+
 ## [1.1.2](https://github.com/patrick-tr/minit/compare/v1.1.1...v1.1.2) (2025-11-01)
 
 
