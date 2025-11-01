@@ -28,7 +28,8 @@ jobs:
           cmake --build build-${{ matrix.arch }}
       - name: Generate checksum
         run: |
-          for file in bin/*; do 
+          cd bin
+          for file in ./*; do 
             sha256sum "${file}" > "${file}.sha256sum"
           done 
       - name: Upload build artifacts
