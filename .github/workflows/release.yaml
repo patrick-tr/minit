@@ -28,7 +28,7 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: minit-${{ matrix.arch }}-${{ github.ref_name }}
+          name: minit-${{ matrix.arch }}
           path: bin/*
 
   semantic-release:

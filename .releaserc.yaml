@@ -6,7 +6,7 @@ plugins:
   - [
       "@semantic-release/github",
       {
-        "assets": ["bin/**"]
+        "assets": ["bin"]
       }
     ]
 
