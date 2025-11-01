@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/patrick-tr/minit/compare/v1.0.0...v1.0.1) (2025-11-01)
+
+
+### Bug Fixes
+
+* test ([406c832](https://github.com/patrick-tr/minit/commit/406c832e2c3b58f581457a8c6eff12a25942e4d4))
+
 # 1.0.0 (2025-11-01)
 
 
