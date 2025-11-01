@@ -1,0 +1,15 @@
+# 1.0.0 (2025-11-01)
+
+
+### Bug Fixes
+
+* **ci:** fix condition in semantic-release if ([4e16f7e](https://github.com/patrick-tr/minit/commit/4e16f7ee346873744611fe0db7010a9ba2f98f33))
+
+
+### Features
+
+* add more architectures and githubb pipeline ([8e485b9](https://github.com/patrick-tr/minit/commit/8e485b9a83fa4f48bac4f75119a2fb0c46caa00a))
+* add possibility to build deb package ([10eaea6](https://github.com/patrick-tr/minit/commit/10eaea6065d4a1cd0414d6d79dc26fde6fcab532))
+* add real build to gitlab ci ([821df3a](https://github.com/patrick-tr/minit/commit/821df3a95c66cac04958700c6127feae2f014c1c))
+* add semantic release ([d3a729c](https://github.com/patrick-tr/minit/commit/d3a729cc53284147d393f867ff0b8121f5352927))
+* create  project and setup build tools ([ca8e256](https://github.com/patrick-tr/minit/commit/ca8e256d02cc222da1e74b2e6be1d9842b581579))
