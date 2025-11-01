@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/patrick-tr/minit/compare/v1.1.0...v1.1.1) (2025-11-01)
+
+
+### Bug Fixes
+
+* resolve arch naming ([0607d93](https://github.com/patrick-tr/minit/commit/0607d9385d0a3f70af00cc1b635544326868da2a))
+
 # [1.1.0](https://github.com/patrick-tr/minit/compare/v1.0.0...v1.1.0) (2025-11-01)
 
 
