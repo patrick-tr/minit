@@ -22,8 +22,8 @@ jobs:
         run: |
           cmake -S . -B build-${{ matrix.arch }} -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=toolchain-${{ matrix.arch }}.cmake
           cmake --build build-${{ matrix.arch }}
-      - name: Archive code coverage results
+      - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: minit-${{ matrix.arch }}-${{ github.ref_name }}
-          path: output/test/code-coverage.html
+          path: bin/${{ matrix.arch }}/minit
